@@ -1,7 +1,9 @@
 require 'howell/rails/version'
+require 'howell/rails/objectified_hash'
+require 'howell/rails/configuration'
 
 module Howell
   module Rails
-    # Your code goes here...
+    extend Configuration
   end
 end
