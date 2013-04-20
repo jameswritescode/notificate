@@ -20,4 +20,8 @@ class ConfigurationTest < MiniTest::Unit::TestCase
   def test_port
     assert_equal Howell.options.port, 1234
   end
+
+  def test_request_path
+    assert_equal Howell.request_path, 'http://example.com:1234/app_notices?channel=zaphyous'
+  end
 end
