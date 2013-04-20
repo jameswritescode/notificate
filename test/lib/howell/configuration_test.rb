@@ -2,11 +2,7 @@ require 'test_helper'
 
 class ConfigurationTest < MiniTest::Unit::TestCase
   def setup
-    Howell.configure(
-      hostname: 'example.com',
-      endpoint: 'app_notices',
-      params:   '?channel=zaphyous',
-      port:     1234)
+    howell_config
   end
 
   def test_hostname
