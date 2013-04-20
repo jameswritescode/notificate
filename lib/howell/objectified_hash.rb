@@ -1,4 +1,4 @@
-class Howell::Rails::ObjectifiedHash
+class Howell::ObjectifiedHash
   def initialize(hash)
     @data = hash.inject({}) do |data, (key, value)|
       value = self.new(value) if value.is_a? Hash

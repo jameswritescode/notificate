@@ -1,7 +1,7 @@
-module Howell::Rails::Configuration
+module Howell::Configuration
   attr_reader :options
 
   def configure(opts = {})
-    @options = Howell::Rails::ObjectifiedHash.new(opts)
+    @options = Howell::ObjectifiedHash.new(opts)
   end
 end
