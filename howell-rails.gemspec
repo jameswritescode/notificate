@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Howell::Rails::VERSION
   spec.authors       = ['James Newton']
   spec.email         = ['james@Zaphyous.com']
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ''
+  spec.description   = %q{Send notices to howell throughout rails applications}
+  spec.summary       = %q{Send notices to howell throughout rails applications}
+  spec.homepage      = 'http://git.zaphyous.com/zaphyous/howell-rails'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'minitest'
 end
