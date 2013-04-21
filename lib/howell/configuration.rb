@@ -2,7 +2,7 @@ module Howell::Configuration
   attr_reader :options
 
   def configure(opts = {})
-    opts[:protocol] ||= 'https'
+    opts[:protocol] ||= :https
     opts[:port]     ||= 80
 
     @options = Howell::ObjectifiedHash.new(opts)
