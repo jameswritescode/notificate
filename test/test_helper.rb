@@ -1,7 +1,10 @@
 require 'minitest/autorun'
 require 'minitest-colorize'
 require 'webmock/minitest'
+require 'rails'
 require 'howell-rails'
+
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
 def howell_config(opts = {})
   Howell.configure(

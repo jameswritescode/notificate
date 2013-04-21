@@ -8,8 +8,6 @@ class NoticeTest < MiniTest::Unit::TestCase
   end
 
   def test_notices_going_to_endpoint
-    binding.pry
-
     Howell.notice 'Testing'
 
     assert_requested @stub_notice

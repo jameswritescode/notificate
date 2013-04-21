@@ -1,0 +1,2 @@
+module Howell::ExceptionCatcher
+end
