@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ConfigurationTest < MiniTest::Unit::TestCase
+class HowellRailsConfigurationTest < MiniTest::Unit::TestCase
   def setup
     Howell::Rails.configure(
       environment: 'production',
@@ -9,7 +9,7 @@ class ConfigurationTest < MiniTest::Unit::TestCase
   end
 
   def test_environment
-    assert_equal Howell::Rails..options.environment, 'production'
+    assert_equal Howell::Rails.options.environment, 'production'
   end
 
   def test_project_root

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ConfigurationTest < MiniTest::Unit::TestCase
+class HowellConfigurationTest < MiniTest::Unit::TestCase
   def setup
     howell_config
   end

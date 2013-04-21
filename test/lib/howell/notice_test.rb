@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NoticeTest < MiniTest::Unit::TestCase
+class HowellNoticeTest < MiniTest::Unit::TestCase
   def setup
     howell_config
 
