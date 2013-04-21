@@ -1,7 +1,7 @@
 module Howell; end
 
 require 'httparty'
-require 'rails/version'
+require 'howell-rails/version'
 require 'howell/objectified_hash'
 require 'howell/configuration'
 require 'howell/notice'
@@ -18,8 +18,8 @@ module Howell
 end
 
 if defined?(Rails)
-  require 'rails/configuration'
-  require 'rails/railtie'
+  require 'howell-rails/configuration'
+  require 'howell-rails/railtie'
 
   module Howell::Rails
     extend Configuration
