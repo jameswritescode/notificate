@@ -1,5 +1,7 @@
 require 'test_helper'
 
+# TODO:
+# * Add a test to check the content of what is being sent in a notice
 class HowellNoticeTest < MiniTest::Unit::TestCase
   def setup
     howell_config
