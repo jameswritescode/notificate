@@ -1,7 +1,6 @@
 require 'minitest/autorun'
 require 'minitest-colorize'
 require 'webmock/minitest'
-require 'shoulda'
 require 'rails'
 require 'howell-rails'
 
