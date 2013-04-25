@@ -1,11 +1,7 @@
 class Howell::Notice
   include ::HTTParty
 
-  attr_reader :message, :message_type
-
   def initialize(message, message_type)
-    @message, @message_type = message, message_type
-
     case message_type
     when :application
       app_notice(message)
