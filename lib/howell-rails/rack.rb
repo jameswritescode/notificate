@@ -10,7 +10,7 @@ module Howell::Rails
       begin
         result = @app.call(env)
       rescue ::Exception => ex
-        ::Howell::ExceptionCatcher.notify(ex, rack_data)
+        @env['howell.notified'] = ::Howell::ExceptionCatcher.notify(ex, rack_data)
 
         raise ex
       end
