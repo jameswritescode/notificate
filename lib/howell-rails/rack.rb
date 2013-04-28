@@ -21,7 +21,7 @@ module Howell::Rails
     def rack_data
       {
         environment: ::Howell::Rails.options.environment,
-        root: ::Howell::Rails.options.project_root
+        root:        ::Howell::Rails.options.project_root
       }
     end
   end

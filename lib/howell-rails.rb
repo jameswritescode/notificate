@@ -20,8 +20,11 @@ end
 if defined?(Rails)
   require 'howell-rails/configuration'
   require 'howell-rails/railtie'
+  require 'howell-rails/controller'
 
   module Howell::Rails
     extend Configuration
+
+    include Controller
   end
 end
