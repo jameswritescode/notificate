@@ -11,7 +11,7 @@ module Howell::Rails::Controller
   end
 
   def notify_howell(exception)
-    ::Howell::ExceptionCatcher.notify(exception, rails_data)
+    ::Howell::ExceptionCatcher.notify(exception, rails_data.to_json)
   end
 
   def _howell_around_filter

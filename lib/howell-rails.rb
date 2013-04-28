@@ -1,5 +1,6 @@
 module Howell; end
 
+require 'json'
 require 'httparty'
 require 'howell-rails/version'
 require 'howell/objectified_hash'
@@ -11,7 +12,7 @@ module Howell
   extend Configuration
 
   def self.notice(message)
-    payload = { body: { payload: { message: message } } }
+    payload = { body: { payload: { message: message }.to_json } }
 
     Notice.new(payload, :application)
   end
