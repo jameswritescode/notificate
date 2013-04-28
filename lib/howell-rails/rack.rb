@@ -1,6 +1,6 @@
 module Howell::Rails
   class Rack
-    def initalize(app)
+    def initialize(app)
       @app = app
     end
 
