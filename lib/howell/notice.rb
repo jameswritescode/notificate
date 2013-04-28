@@ -2,6 +2,8 @@ class Howell::Notice
   include ::HTTParty
 
   def initialize(message, message_type)
+    @defaults = { headers: { ContentType: 'application/json'}}
+
     case message_type
     when :application
       app_notice(message)
@@ -11,10 +13,10 @@ class Howell::Notice
   end
 
   def app_notice(payload)
-    self.class.post(Howell.request_path, payload)
+    self.class.post(Howell.request_path, payload.merge(@defaults))
   end
 
   def exception_notice(payload)
-    self.class.post(Howell.request_path, payload)
+    self.class.post(Howell.request_path, payload.merge(@defaults))
   end
 end
