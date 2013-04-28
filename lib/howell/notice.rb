@@ -2,7 +2,7 @@ class Howell::Notice
   include ::HTTParty
 
   def initialize(message, message_type)
-    @defaults = { headers: { 'ContentType' => 'application/json'}}
+    @defaults = { headers: { 'Content-Type' => 'application/json'} }
 
     case message_type
     when :application
