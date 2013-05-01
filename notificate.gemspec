@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['james@Zaphyous.com']
   spec.description   = %q{Send notices to howell throughout rails applications}
   spec.summary       = %q{Send notices to howell throughout rails applications}
-  spec.homepage      = 'http://git.zaphyous.com/zaphyous/howell-rails'
+  spec.homepage      = 'https://github.com/zaphyous/notificate'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
