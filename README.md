@@ -1,6 +1,6 @@
-# Howell::Rails
+# Notificate
 
-TODO: Write a gem description
+Send notifications to a configured endpoint in ruby applications.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Or install it yourself as:
 Notificate.configure hostname: 'example.com', endpoint: 'app_notices', protocol: 'http', port: 1234
 ```
 
-Optional: `protocol` (default https)
+Optional: `protocol` (default https), `port` (default 80)
 
 #### Rails
 
