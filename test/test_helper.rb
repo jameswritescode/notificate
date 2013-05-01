@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'minitest-colorize'
 require 'webmock/minitest'
 require 'rails'
-require 'notificate-rails'
+require 'notificate'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
