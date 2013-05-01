@@ -2,15 +2,15 @@ require 'test_helper'
 
 # TODO:
 # * Add a test to check the content of what is being sent in a notice
-class HowellNoticeTest < MiniTest::Unit::TestCase
+class NotificateNoticeTest < MiniTest::Unit::TestCase
   def setup
-    howell_config
+    notificate_config
 
-    @stub_notice = stub_request(:post, Howell.request_path)
+    @stub_notice = stub_request(:post, Notificate.request_path)
   end
 
   def test_notices_going_to_endpoint
-    Howell.notice 'Testing'
+    Notificate.notice 'Testing'
 
     assert_requested @stub_notice
   end

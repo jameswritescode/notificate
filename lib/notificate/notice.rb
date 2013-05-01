@@ -1,4 +1,4 @@
-class Howell::Notice
+class Notificate::Notice
   include ::HTTParty
 
   def initialize(message, message_type)
@@ -13,10 +13,10 @@ class Howell::Notice
   end
 
   def app_notice(payload)
-    self.class.post(Howell.request_path, payload.merge(@defaults))
+    self.class.post(Notificate.request_path, payload.merge(@defaults))
   end
 
   def exception_notice(payload)
-    self.class.post(Howell.request_path, payload.merge(@defaults))
+    self.class.post(Notificate.request_path, payload.merge(@defaults))
   end
 end

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'howell-rails/version'
+require 'notificate-rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'howell-rails'
-  spec.version       = Howell::Rails::VERSION
+  spec.name          = 'notificate'
+  spec.version       = Notificate::Rails::VERSION
   spec.authors       = ['James Newton']
   spec.email         = ['james@Zaphyous.com']
   spec.description   = %q{Send notices to howell throughout rails applications}

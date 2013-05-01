@@ -1,4 +1,4 @@
-module Howell::Rails
+module Notificate::Rails
   class Rack
     def initialize(app)
       @app = app
@@ -10,7 +10,7 @@ module Howell::Rails
       begin
         result = @app.call(env)
       rescue ::Exception => ex
-        @env['howell.notified'] = ::Howell::ExceptionCatcher.notify(ex, rack_data)
+        @env['notificate.notified'] = ::Notificate::ExceptionCatcher.notify(ex, rack_data)
 
         raise ex
       end
@@ -20,8 +20,8 @@ module Howell::Rails
 
     def rack_data
       {
-        environment: ::Howell::Rails.options.environment,
-        root:        ::Howell::Rails.options.project_root
+        environment: ::Notificate::Rails.options.environment,
+        root:        ::Notificate::Rails.options.project_root
       }
     end
   end

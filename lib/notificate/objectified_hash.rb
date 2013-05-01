@@ -1,4 +1,4 @@
-class Howell::ObjectifiedHash
+class Notificate::ObjectifiedHash
   def initialize(hash)
     @data = hash.inject({}) do |data, (key, value)|
       value = self.new(value) if value.is_a? Hash

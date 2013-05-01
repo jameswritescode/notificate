@@ -1,11 +1,11 @@
-module Howell::Configuration
+module Notificate::Configuration
   attr_reader :options
 
   def configure(opts = {})
     opts[:protocol] ||= :https
     opts[:port]     ||= 80
 
-    @options = Howell::ObjectifiedHash.new(opts)
+    @options = Notificate::ObjectifiedHash.new(opts)
   end
 
   def request_path
