@@ -30,7 +30,15 @@ Optional: `protocol` (default https), `port` (default 80)
 
 Configure Notificate in a file like `config/initializers/notificate.rb`
 
-Then `include Notificate::Rails` in your `ApplicationController` and put in `enable_notificate_notifications`.
+Then make your application controller look something like this:
+
+```ruby
+class ApplicationController < ActionController::Base
+  include Notificate::Rails
+
+  enable_notificate_notifications
+end
+```
 
 ## Contributing
 
